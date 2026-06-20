@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+</head>
+<body>
+    <h1>Shorten Your URL</h1>
+    <form method="POST">
+        <input type="url" name="original_url" placeholder="Enter long URL" required>
+        <button type="submit">Shorten</button>
+    </form>
+
+    {% if short_code %}
+    <div style="margin-top: 20px; padding: 15px; border: 1px solid #ccc;">
+        <h3>Your Short URL:</h3>
+        <input type="text" value="{{ full_url }}" id="shortUrl" readonly style="width: 300px;">
+        <button onclick="copyLink()">Copy</button>
+        <a href="{{ full_url }}" target="_blank"><button>Open Link</button></a>
+
+        <p><b>Clicks:</b> {{ clicks }}</p>
+        <p><b>Created:</b> {{ created_at }}</p>
+    </div>
+    {% endif %}
+
+<script>
+function copyLink() {
+    let copyText = document.getElementById("shortUrl");
+    copyText.select();
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied: " + copyText.value);
+}
+</script>
+
+</body>
+</html>
