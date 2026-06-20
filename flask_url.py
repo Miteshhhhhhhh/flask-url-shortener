@@ -38,7 +38,7 @@ def home():
         db.execute("INSERT INTO urls (original_url, short_code) VALUES (?,?)", (original_url, short_code))
         db.commit()
 
-        # Ab DB se pura record nikal
+    
         result = db.execute("SELECT * FROM urls WHERE short_code=?", (short_code,)).fetchone()
         full_url = request.host_url + short_code
 
