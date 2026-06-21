@@ -10,13 +10,15 @@
 
 
 
-A minimal URL shortener built with Flask and SQLite. Generate short links, track clicks, and copy them with one click.
+A minimal URL shortener built with Flask and SQLite. Generate short links, track clicks, copy them with one click, and delete them when needed.
 
 ## ✨ Features
 
 - **URL Shortening**: Convert long URLs into 6-character short codes
 - **Click Analytics**: Tracks how many times each short link was visited
 - **Timestamps**: Shows when each short URL was created
+- **URL Deletion**: Delete short links with confirmation dialog
+- **Duplicate Prevention**: Same URL returns existing short code instead of creating new
 - **One-Click Copy**: Copy short link to clipboard instantly
 - **Open Link Button**: Test your short URL directly
 - **SQLite Database**: Lightweight, serverless, zero-config database
