@@ -5,7 +5,8 @@
 
 ### 📸 Screenshots
 
-![Homepage] <img width="845" height="460" alt="shortener_url" src="https://github.com/user-attachments/assets/8963f0f6-0423-4f2a-aafa-82fdafcd1681" />
+![Homepage] <img width="819" height="460" alt="flask_url_shortener" src="https://github.com/user-attachments/assets/9c92e953-e57b-4681-93f8-0b5434f53ddf" />
+
 ![Shortened Link] <img width="1364" height="638" alt="shortener_url_2" src="https://github.com/user-attachments/assets/b0ec20bf-2bb5-42cc-95f7-698cabf26655" />
 
 
