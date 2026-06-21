@@ -46,11 +46,10 @@ def home():
             db.commit()
             result = db.execute("SELECT * FROM urls WHERE short_code=?", (short_code,)).fetchone()
 
-<<<<<<< HEAD
-=======
+
     
         result = db.execute("SELECT * FROM urls WHERE short_code=?", (short_code,)).fetchone()
->>>>>>> 5383133e89a9b853acc392c52f872be3a46965da
+
         full_url = request.host_url + short_code
         created_time = result['created_at'].split('.')[0]
         formatted_date = datetime.strptime(created_time, '%Y-%m-%d %H:%M:%S').strftime('%d %B %Y')
