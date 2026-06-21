@@ -1,5 +1,15 @@
 # 🔗 Flask URL Shortener
 
+   ### 🚀 Live Demo
+   **[Click Here - https://flask-url-shortener-9tkq.onrender.com](https://flask-url-shortener-9tkq.onrender.com)**
+
+### 📸 Screenshots
+
+![Homepage] <img width="845" height="460" alt="shortener_url" src="https://github.com/user-attachments/assets/8963f0f6-0423-4f2a-aafa-82fdafcd1681" />
+![Shortened Link] <img width="1364" height="638" alt="shortener_url_2" src="https://github.com/user-attachments/assets/b0ec20bf-2bb5-42cc-95f7-698cabf26655" />
+
+
+
 A minimal URL shortener built with Flask and SQLite. Generate short links, track clicks, and copy them with one click.
 
 ## ✨ Features
@@ -17,6 +27,9 @@ A minimal URL shortener built with Flask and SQLite. Generate short links, track
 - **Database**: SQLite3
 - **Frontend**: HTML, Vanilla JavaScript
 - **Deployment**: Gunicorn + Render
+
+   ### ⚠️ Note
+   Hosted on Render's free tier. Short links may expire if the server restarts due to SQLite's ephemeral storage.
 
 ## 📦 Setup Locally
 
